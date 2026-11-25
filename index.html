@@ -3,43 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhiraj Pawar - Data Analyst 🔥</title>
+<title>Dhiraj Pawar - Full Stack Developer 🔥</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
 body{background:#050816;color:white;overflow-x:hidden}
 a{color:#38bdf8;text-decoration:none}
-
-/* BACKGROUND ANIMATION */
 .bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background:linear-gradient(45deg,#050816,#0f172a,#1e1b4b,#0e7490);background-size:400% 400%;animation:bgMove 10s ease infinite}
 @keyframes bgMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .bubble{position:fixed;border-radius:50%;background:rgba(56,189,248,.25);animation:float 6s ease-in-out infinite;z-index:-1}
 @keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.1)}}
-
-/* HEADER */
 .header{text-align:center;padding:50px 20px 30px;perspective:1000px}
 .profile-wrap{display:inline-block;animation:float 3s ease-in-out infinite}
-.profile-pic{width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid #38bdf8;box-shadow:0 0 0 5px rgba(56,189,248,.2),0 20px 50px rgba(56,189,248,.5);transition:.5s;cursor:pointer}
+.profile-pic{width:170px;height:170px;border-radius:50%;object-fit:cover;border:5px solid #38bdf8;box-shadow:0 0 0 5px rgba(56,189,248,.2),0 20px 50px rgba(56,189,248,.5);transition:.5s;cursor:pointer;background:#1e293b}
 .profile-pic:hover{transform:scale(1.1) rotate(5deg);box-shadow:0 0 0 8px #38bdf8,0 0 60px #38bdf8}
 .header h1{font-size:40px;margin-top:15px;background:linear-gradient(90deg,#38bdf8,#a78bfa,#f472b6,#38bdf8);background-size:300% 100%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite}
 @keyframes shine{to{background-position:300% 0}}
-.header h2{font-size:18px;color:#e0f2fe;margin:8px 0;animation:slideIn 1s ease}
-@keyframes slideIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.header h2{font-size:18px;color:#e0f2fe;margin:8px 0}
 .typing{color:#facc15;font-weight:bold;font-size:16px;min-height:24px}
 .btn{display:inline-block;background:linear-gradient(90deg,#0ea5e9,#7c3aed);color:white;padding:12px 24px;border-radius:30px;font-weight:bold;margin:10px 5px;box-shadow:0 8px 25px rgba(14,165,233,.5);transition:.3s}
-.btn:hover{transform:translateY(-5px) scale(1.05);box-shadow:0 15px 35px rgba(124,58,237,.6)}
+.btn:hover{transform:translateY(-5px) scale(1.05)}
 .btn2{background:transparent;border:2px solid white;box-shadow:none}
-
 .container{max-width:920px;margin:auto;padding:20px}
-/* 3D CARD */
-.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);padding:24px;border-radius:20px;margin-bottom:22px;transition:.4s;transform-style:preserve-3d;animation:fadeUp .8s ease both}
-.card:nth-child(2){animation-delay:.2s}.card:nth-child(3){animation-delay:.4s}.card:nth-child(4){animation-delay:.6s}
+.card{background:rgba(255,255,255,.08);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.15);padding:24px;border-radius:20px;margin-bottom:22px;transition:.4s;animation:fadeUp .8s ease both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
-.card:hover{transform:translateY(-8px) rotateX(2deg) rotateY(2deg);border-color:#38bdf8;box-shadow:0 20px 40px rgba(56,189,248,.25)}
+.card:hover{transform:translateY(-8px);border-color:#38bdf8;box-shadow:0 20px 40px rgba(56,189,248,.25)}
 .card h3{color:#38bdf8;margin-bottom:14px;font-size:23px}
 .tag{display:inline-block;background:linear-gradient(90deg,#0ea5e9,#2563eb);padding:6px 14px;border-radius:20px;font-size:13px;margin:4px;transition:.3s;cursor:pointer}
 .tag:hover{transform:scale(1.15) rotate(-3deg);background:#f59e0b}
 .tag2{background:linear-gradient(90deg,#7c3aed,#db2777)}
 .tag3{background:linear-gradient(90deg,#059669,#0ea5e9)}
+.tag4{background:linear-gradient(90deg,#f59e0b,#ef4444)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.header h1{font-size:30px}}
 .job{margin-bottom:16px;background:rgba(0,0,0,.25);padding:15px;border-radius:14px;border-left:4px solid #38bdf8;transition:.3s}
@@ -59,16 +52,18 @@ li{margin-bottom:6px}
 <body>
 <div class="bg"></div>
 <div class="bubble" style="width:80px;height:80px;top:10%;left:5%"></div>
-<div class="bubble" style="width:50px;height:50px;top:70%;left:85%;animation-delay:1s"></div>
-<div class="bubble" style="width:60px;height:60px;top:40%;left:90%;animation-delay:2s"></div>
-<div class="bubble" style="width:40px;height:40px;top:80%;left:10%;animation-delay:.5s"></div>
+<div class="bubble" style="width:50px;height:50px;top:70%;left:85%"></div>
+<div class="bubble" style="width:60px;height:60px;top:40%;left:90%"></div>
 
 <div class="header">
-  <div class="profile-wrap"><img src="profile.jpg" class="profile-pic" alt="Dhiraj Pawar"></div>
+  <div class="profile-wrap">
+    <!-- PHOTO ITHE AHE - profile.jpg navane upload kar -->
+    <img src="profile.jpg" onerror="this.src='https://github.com/pawardhiraj23.png'" class="profile-pic" alt="Dhiraj Pawar">
+  </div>
   <h1>🔥 Dhiraj Pawar 🔥</h1>
-  <h2>Data Analyst | Python | SQL | Machine Learning</h2>
+  <h2>Full Stack Developer | Data Analyst</h2>
   <div class="typing" id="typing"></div>
-  <p style="color:#e2e8f0;font-size:14px;max-width:600px;margin:10px auto">I turn messy data into clear decisions. Building data-driven tools, dashboards & ML models.</p>
+  <p style="color:#e2e8f0;font-size:14px;max-width:650px;margin:10px auto">I build complete web apps - Frontend, Backend & Database. From beautiful UI to powerful APIs & Data Analysis.</p>
   <a class="btn" href="mailto:pawardhiraj23@gmail.com">📧 Hire Me</a>
   <a class="btn btn2" href="https://github.com/pawardhiraj23" target="_blank">GitHub ↗</a>
 </div>
@@ -76,54 +71,55 @@ li{margin-bottom:6px}
 <div class="container">
   <div class="card">
     <h3>💼 About Me</h3>
-    <p style="color:#cbd5e1">Data Analyst & Full-Stack Developer from Pune. B.Sc CS - SPPU. I love data - cleaning, analyzing, visualizing & building ML models that solve real student problems.</p>
+    <p style="color:#cbd5e1">Full Stack Developer from Pune. B.Sc CS - SPPU. Frontend - React, Backend - Node.js, Database - PostgreSQL / SQL. Plus Data Analysis - Python, Pandas, ML. Ek manus, sagla kaam!</p>
     <p style="margin-top:10px">📍 Pune &nbsp;|&nbsp; 📞 9130791235 &nbsp;|&nbsp; ✉️ pawardhiraj23@gmail.com</p>
   </div>
 
   <div class="card">
-    <h3>🛠️ Skills - Level Up! 🎮</h3>
-    Python<div class="skill-bar"><div class="fill" style="--w:90%;width:90%;background:linear-gradient(90deg,#38bdf8,#7c3aed)"></div></div>
-    SQL<div class="skill-bar"><div class="fill" style="--w:85%;width:85%;background:linear-gradient(90deg,#f59e0b,#ef4444)"></div></div>
-    Machine Learning<div class="skill-bar"><div class="fill" style="--w:75%;width:75%;background:linear-gradient(90deg,#10b981,#0ea5e9)"></div></div>
+    <h3>💻 Full Stack Skills - Level Up! 🎮</h3>
+    <b>🎨 Frontend</b><br>
+    HTML<div class="skill-bar"><div class="fill" style="--w:95%;width:95%;background:linear-gradient(90deg,#f97316,#ef4444)"></div></div>
+    CSS / Tailwind<div class="skill-bar"><div class="fill" style="--w:90%;width:90%;background:linear-gradient(90deg,#38bdf8,#7c3aed)"></div></div>
+    JavaScript / React<div class="skill-bar"><div class="fill" style="--w:85%;width:85%;background:linear-gradient(90deg,#facc15,#f97316)"></div></div>
     <br>
-    <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag tag2">ML</span><span class="tag tag2">Scikit-learn</span><span class="tag tag2">EDA</span><span class="tag tag3">Power BI</span><span class="tag tag3">Excel</span><span class="tag tag3">HTML/CSS/JS</span>
+    <b>⚙️ Backend</b><br>
+    Node.js / Express<div class="skill-bar"><div class="fill" style="--w:80%;width:80%;background:linear-gradient(90deg,#10b981,#0ea5e9)"></div></div>
+    Python<div class="skill-bar"><div class="fill" style="--w:90%;width:90%;background:linear-gradient(90deg,#38bdf8,#7c3aed)"></div></div>
+    <br>
+    <b>🗄️ Database</b><br>
+    SQL / PostgreSQL<div class="skill-bar"><div class="fill" style="--w:85%;width:85%;background:linear-gradient(90deg,#f59e0b,#ef4444)"></div></div>
+    <br>
+    <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span><span class="tag">Tailwind CSS</span>
+    <span class="tag tag2">Node.js</span><span class="tag tag2">Express</span><span class="tag tag2">REST API</span><span class="tag tag2">Python</span>
+    <span class="tag tag3">PostgreSQL</span><span class="tag tag3">MySQL</span><span class="tag tag3">MongoDB</span><span class="tag tag3">Git & GitHub</span>
+    <span class="tag tag4">Pandas</span><span class="tag tag4">SQL</span><span class="tag tag4">Power BI</span><span class="tag tag4">Machine Learning</span>
   </div>
 
   <div class="card">
-    <h3>🚀 Projects</h3>
-    <div class="job"><b>🎓 Student Addiction Prediction Model</b><span>Python • ML • Pandas • Scikit-learn</span><ul><li>Analyzed 700+ student records to predict addiction risk.</li><li>Cleaned data, EDA, feature engineering & trained ML model.</li><li>Helps students improve focus & habits.</li></ul></div>
-    <div class="job"><b>📊 Student Addiction Tracker</b><span>HTML • CSS • JS • GitHub Pages</span><ul><li>Track screen time, study hours & habits daily.</li><li>Login, tracking, tips & local storage.</li></ul></div>
+    <h3>🚀 Full Stack Projects</h3>
+    <div class="job"><b>🛒 E-Commerce Website - Full Stack</b><span>React • Node.js • PostgreSQL</span><ul><li>Product list, Cart, Login/Signup, Checkout.</li><li>Frontend React, Backend Node + Express, Database PostgreSQL.</li></ul></div>
+    <div class="job"><b>🎓 Student Addiction Prediction Model</b><span>Python • ML • Pandas</span><ul><li>700+ student records var ML model - addiction predict karto.</li><li>EDA, Feature Engineering & Model Training.</li></ul></div>
+    <div class="job"><b>📊 Student Addiction Tracker</b><span>HTML • CSS • JS</span><ul><li>Track screen time, study hours & habits daily.</li></ul></div>
   </div>
 
   <div class="card">
     <h3>🎓 Education</h3>
     <div class="job"><b>B.Sc. Computer Science</b><span>Savitribai Phule Pune University • 2023 - 2026</span></div>
-    <div class="job"><b>HSC - Science</b><span>2022 - 2023</span></div>
   </div>
 
   <div class="grid">
-    <div class="card"><h3>🏆 Strengths</h3><ul><li>Problem Solving</li><li>Quick Learner</li><li>Data Storytelling</li><li>Team Work</li></ul></div>
-    <div class="card"><h3>🎯 Looking For</h3><ul><li>Data Analyst Internship</li><li>Python / ML Internship</li><li>Freelance Projects</li></ul></div>
+    <div class="card"><h3>🏆 What I Can Do?</h3><ul><li>Full Website Banvu Shakto</li><li>Backend + Database Connect</li><li>Data Analysis + Dashboard</li><li>Responsive Design</li></ul></div>
+    <div class="card"><h3>🎯 Looking For</h3><ul><li>Full Stack Internship</li><li>Frontend / Backend Internship</li><li>Freelance Website Projects</li></ul></div>
   </div>
 
-  <div class="card" style="text-align:center">
-    <h3>📩 Let's Work Together!</h3>
-    <p style="color:#cbd5e1">Internship ahe ka? Project ahe ka? Bol!</p>
-    <a class="btn" href="mailto:pawardhiraj23@gmail.com">Email Me</a>
-  </div>
+  <div class="card" style="text-align:center"><h3>📩 Website Banvaychay Ka?</h3><p style="color:#cbd5e1">Business, Portfolio, Shop - kuthli pan website banvun deto!</p><a class="btn" href="mailto:pawardhiraj23@gmail.com">Email Me</a></div>
 </div>
-<div class="footer">© 2026 Dhiraj Pawar • Made with <span class="heart">❤️</span> in Pune</div>
+<div class="footer">© 2026 Dhiraj Pawar • Full Stack Developer • Made with <span class="heart">❤️</span> in Pune</div>
 
 <script>
-const texts=["📊 Data Analyst","🐍 Python Developer","🤖 ML Enthusiast","📈 Data Storyteller"];
+const texts=["💻 Full Stack Developer","🎨 Frontend - React","⚙️ Backend - Node.js","🗄️ Database - PostgreSQL","📊 Data Analyst"];
 let i=0,j=0,del=false;
-function type(){
-  let el=document.getElementById("typing");
-  let cur=texts[i];
-  if(!del){j++; el.innerText=cur.slice(0,j)+" |"; if(j==cur.length){del=true; setTimeout(type,1200); return;}}
-  else{j--; el.innerText=cur.slice(0,j)+" |"; if(j==0){del=false;i=(i+1)%texts.length;}}
-  setTimeout(type, del?50:90);
-}
+function type(){let el=document.getElementById("typing");let cur=texts[i];if(!del){j++;el.innerText=cur.slice(0,j)+" |";if(j==cur.length){del=true;setTimeout(type,1200);return;}}else{j--;el.innerText=cur.slice(0,j)+" |";if(j==0){del=false;i=(i+1)%texts.length;}}setTimeout(type,del?50:90);}
 type();
 document.querySelectorAll('.card').forEach(c=>{
   c.addEventListener('mousemove',e=>{
